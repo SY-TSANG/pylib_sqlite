@@ -8,5 +8,5 @@ setup(
     url="",
     description="",
     packages=find_packages(),
-    install_requires=["sqlite"]
+    install_requires=["sqlite3"]
 )
