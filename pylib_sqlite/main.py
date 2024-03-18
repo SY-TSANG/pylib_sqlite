@@ -23,10 +23,3 @@ class PylibSqlite():
 
     def init(self):
         return SqliteQuery(self.db)
-    
-if __name__ == "__main__":
-    pylibSqlite = PylibSqlite(db="db.db")
-
-    with pylibSqlite.init() as mysql:
-        res = mysql.fetch("select * from epc_list")
-        print(res)
